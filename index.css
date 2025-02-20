@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Scoreboard container */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    background-color: #1A237E; /* Board Blue Background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Each team section */
+.container div {
+    text-align: center;
+}
+
+/* Team name */
+h3 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Digital display for scores */
+.pts {
+    font-size: 48px;
+    font-weight: bold;
+    color: #D32F2F; /* Yellowish LED look */
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100px;
+    margin: 0 auto;
+    font-family: 'Orbitron', sans-serif; /* Digital font */
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 5px; /* Spaced-out effect like digital clocks */
+}
+
+/* Dotted numbers effect (optional) */
+.pts-shadow {
+    font-size: 48px;
+    font-weight: bold;
+    color: rgba(255, 235, 59, 0.3);
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100px;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+    display: none; /* You can enable this if you want a shadow effect */
+}
+
+/* Buttons */
+button {
+    /* Stack buttons below each other */
+    width: 60px;
+    margin: 5px auto;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #1A237E; /* Red button */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #B71C1C; /* Darker red */
+}
